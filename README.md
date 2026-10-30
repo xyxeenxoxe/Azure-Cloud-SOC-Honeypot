@@ -66,6 +66,12 @@ The screenshots below document the lab setup, log collection, and attack map. Ac
 
 ![Sentinel attack map](images/sentinel-attack-map.png)
 
+### Attack map after 15 hours
+
+![Attack map after 15 hours](images/attack-map-after-15-hours.png)
+
+The workbook map shows failed sign-in activity grouped by geolocation after 15 hours of honeypot data collection.
+
 ## About
 
 This project demonstrates practical exposure to cloud log collection, basic SIEM investigation, KQL, event enrichment, and security event visualization. It is a lab project, not a production deployment.
