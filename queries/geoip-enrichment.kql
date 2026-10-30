@@ -1,0 +1,8 @@
+// Enrich failed sign-in source IPs using a Sentinel watchlist with alias "geoip".
+// The watchlist should contain a network column with IPv4 ranges.
+let GeoIPDB_FULL = _GetWatchlist("geoip");
+SecurityEvent
+| where EventID == 4625
+| where isnotempty(IpAddress)
+| evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network)
+| order by TimeGenerated desc

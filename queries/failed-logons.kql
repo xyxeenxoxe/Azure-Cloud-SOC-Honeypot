@@ -1,0 +1,6 @@
+// Find recent Windows failed sign-in events (Event ID 4625).
+SecurityEvent
+| where TimeGenerated > ago(5m)
+| where EventID == 4625
+| project TimeGenerated, EventID, Activity, IpAddress, AccountName
+| order by TimeGenerated desc

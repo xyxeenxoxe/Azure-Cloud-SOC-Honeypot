@@ -45,9 +45,26 @@ See [`queries/geoip-enrichment.kql`](queries/geoip-enrichment.kql). This example
 
 This was an isolated learning lab. The exercise used permissive inbound access and disabled the Windows firewall to generate observable activity. Those settings are unsafe for a production system. Do not copy them to an internet-facing or business system; use a controlled lab and remove or secure cloud resources when finished.
 
-## Evidence
+## Screenshots
 
-Screenshots are not included in this draft. The supplied images show personal Azure account information and network identifiers, so they need careful redaction before being added to a public repository.
+The screenshots below document the lab setup, log collection, and attack map. Account details and the Azure subscription ID have been redacted. The VM overview leaves the honeypot's public IP visible as requested.
+
+### Azure virtual machine
+
+![Azure VM overview](images/azure-vm-overview.png)
+
+### Windows event collection
+
+![AMA data collection rule](images/ama-data-collection-rule.png)
+![Security events in Log Analytics](images/security-events-log-analytics.png)
+
+### Network security rule
+
+![Network security group rule](images/network-security-group-rule.png)
+
+### Sentinel attack map
+
+![Sentinel attack map](images/sentinel-attack-map.png)
 
 ## About
 
