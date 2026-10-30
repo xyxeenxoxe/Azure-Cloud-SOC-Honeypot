@@ -1,4 +1,3 @@
-# Azure-Cloud-SOC-Honeypot
 # Azure Sentinel Honeypot and Attack Map
 
 A hands-on Azure security monitoring lab focused on collecting Windows failed sign-in events, querying them with KQL, enriching source IP addresses with GeoIP data, and viewing the results in a Microsoft Sentinel workbook.
